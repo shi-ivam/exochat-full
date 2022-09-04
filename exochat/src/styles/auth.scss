@@ -1,0 +1,111 @@
+$teal0: #40d5f3;
+$teal1: #00b4d8;
+$teal2: #0caba7;
+$teal3: #008f8d;
+$teal4: #015a58;
+$teal5: #023536;
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.auth-wrapper {
+  padding: 2rem 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin: 2rem auto 0 auto;
+  padding: 1rem;
+  width: max-content;
+  background-color: rgba(0, 0, 0, 0.212);
+  border-radius: 1rem;
+  .left {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start !important;
+  }
+  .change-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+      margin-top: 0rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      color: $teal1;
+      text-transform: capitalize;
+    }
+    p {
+      font-size: 0.9rem;
+      color: $teal3;
+      font-weight: 400;
+    }
+  }
+  div.sep {
+    height: 1.5rem;
+  }
+  input {
+    margin-top: 0.5rem;
+    padding: 0.4rem 1rem;
+    text-align: center;
+    width: 100%;
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    border-radius: 0.6rem;
+    color: white;
+    font-family: 'Hind Madurai';
+    background: transparent;
+    outline: none;
+    border: 2px solid $teal4;
+    // box-shadow: 0 0 0 0 $teal4;
+    // box shadow
+    &:focus {
+      box-shadow: 0 0 0 0.1rem $teal4;
+    }
+  }
+  h2 {
+    text-align: left;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.644);
+    font-weight: 400;
+    font-family: 'Open Sans';
+  }
+}
+
+.snackbar {
+  //   background-color: rgba(0, 0, 0, 0.212);
+  border-radius: 1rem;
+  //   width: 270px;
+  width: 100%;
+  text-align: center;
+  //   margin-top: 1rem;
+  margin: 1rem auto 0 auto;
+  color: rgb(224, 118, 118);
+  font-size: 1rem;
+}
+
+button {
+  font-size: 0.9rem !important;
+  &:hover {
+    span {
+      margin-right: 0.8rem;
+    }
+  }
+  span {
+    transition: 0.3s ease-in-out;
+    margin-right: 0.5rem;
+  }
+  svg {
+    transform: scale(1.7);
+  }
+}

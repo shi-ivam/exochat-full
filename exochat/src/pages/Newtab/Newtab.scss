@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'TechnaSans';
+  src: url('../../assets/fonts/TechnaSans-Regular.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fenix&family=Hind+Madurai:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+$myColor: #292841;
+
+$teal1: #00b4d8;
+$teal2: #0caba7;
+$teal3: #008f8d;
+$teal4: #015a58;
+$teal5: #023536;
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   color: $myColor;
+// }
+p {
+  font-family: 'Open Sans';
+  font-size: 3rem;
+  font-weight: 700;
+  max-width: 700px;
+  span {
+    color: $teal2;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  .btns {
+    padding: 2rem;
+    button,
+    a {
+      cursor: pointer;
+      padding: 0.7rem 2rem;
+      color: white;
+      border: none;
+      border-radius: 2rem;
+      font-family: 'Open Sans';
+      font-weight: 400;
+      font-size: 1.2rem;
+      // red blue gradient
+      background: linear-gradient(90deg, $teal1 0%, $teal2 100%);
+    }
+  }
+}
+
+.App {
+  background-color: $myColor;
+  h2 {
+    color: #0fc2bf;
+    font-size: 2rem;
+    font-weight: lighter;
+    font-family: 'TechnaSans';
+  }
+}
