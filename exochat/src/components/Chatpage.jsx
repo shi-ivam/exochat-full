@@ -233,7 +233,7 @@ const Chatpage = (props) => {
       <div className="channel-id">
         <p className="id">{props.url}</p>
         {state ? 
-        state.title ?
+        state.videoTitle ?
         !dropdownvisible ? (
           <button
             onClick={() => {
