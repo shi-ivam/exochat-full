@@ -100,7 +100,7 @@ app.post('/create', async (req, res) => {
         // Channel ID; leave this field as null if you want an auto-generated ID
         "group_chat_1"
     );
-    console.log(channel)
+    // console.log(channel)
 })
 
 app.post('/send-message', async (req, res) => {
@@ -144,10 +144,6 @@ app.post('/send-message', async (req, res) => {
 
     if (create) {
         const details = await fetchVideoDetailsV2(videoId);
-        console.log('---- details ----')
-        console.log(details)
-        console.log('---- details ----')
-
 
         const channel = await hop.channels.create(
             // Channel Type; either: "unprotected", "public", or "private"
@@ -220,7 +216,6 @@ app.get('/msgs/:videoId', async (req, res) => {
         // dompurify the message
         // msgs[i].message = dompurify.sanitize(msgs[i].message);
     }
-    console.log(msgs)
     res.status(200).send({
         type: 'success',
         msgs: msgs,
@@ -263,7 +258,6 @@ app.post('/signup', async (req, res) => {
     const foundUser = await UserModel.findOne({
         username
     })
-    console.log(foundUser);
     if (foundUser) {
         return res.status(200).json({
             type: 'failed',

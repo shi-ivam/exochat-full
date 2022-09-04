@@ -232,7 +232,9 @@ const Chatpage = (props) => {
       {/* <h1>Live Chat</h1> */}
       <div className="channel-id">
         <p className="id">{props.url}</p>
-        {!dropdownvisible ? (
+        {state ? 
+        state.title ?
+        !dropdownvisible ? (
           <button
             onClick={() => {
               setDropdownvisible(!dropdownvisible);
@@ -272,7 +274,7 @@ const Chatpage = (props) => {
               />
             </svg>
           </button>
-        )}
+        ):'':''}
       </div>
       {state ? (
         <Fade collapse bottom when={state && dropdownvisible}>

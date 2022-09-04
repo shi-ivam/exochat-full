@@ -49,9 +49,12 @@ Take Advantage of our application's live chat feature and timestamp marking on y
 5. Large Package Sizes
 6. Manifest.json Fequently changing structure and requirement (chrome extension)
 
+---
 
 ### How to run this on your local machine?
 #### Follow these steps:
+#### Check the alternate commands if you face issues
+#### Tested on node v16
 
 1. Install mongodb on your localmachine and get connection url string for exochat database.
     
@@ -62,7 +65,7 @@ Take Advantage of our application's live chat feature and timestamp marking on y
     ```
     then, you connection url will be : mongodb://admin:secret@localhost:27017/exochat
 
-2. Add the Connection string to exochat-server/.env
+2. Update the Connection string in "exochat-server/.env"
 3. Install The Packages in "exochat-server" folder
     ```
         npm install
